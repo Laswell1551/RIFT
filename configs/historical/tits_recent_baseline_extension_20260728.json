@@ -1,0 +1,29 @@
+{
+  "name": "tits_recent_baseline_extension_20260728",
+  "seed": 7,
+  "task_order": [
+    "baseline",
+    "wind5",
+    "speed15",
+    "alt180",
+    "speed10",
+    "alt200"
+  ],
+  "backbone": "mlp",
+  "interaction_mode": "none",
+  "epochs_per_task": 15,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "torch_threads": 2,
+  "memory_budget": 500,
+  "train_limit_per_task": 4000,
+  "eval_limit_per_task": 2000,
+  "syrem_rehearsal_ratio": 1.0,
+  "dualls_slow_decay": 0.99,
+  "dualls_consistency": 0.1,
+  "dualls_blend": 0.5,
+  "methods": [
+    "syrem_adapted",
+    "dualls_adapted"
+  ]
+}

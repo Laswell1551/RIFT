@@ -1,0 +1,186 @@
+{
+  "source": "local original regen/processed/states corpus; identical canonical windows verified",
+  "files": [
+    {
+      "file": "alt180__calm.parquet",
+      "records": 631560,
+      "bytes": 25768150,
+      "sha256": "8d6035285e1b57bb3c5e4e6cbe9bb549185c9606a511dc3fcf47527d50ec81a1"
+    },
+    {
+      "file": "alt180__e10.parquet",
+      "records": 905743,
+      "bytes": 35951497,
+      "sha256": "5483eec576f3538ad1891dba900f5dfe77ca2f702312867d4dbe7d6e87dd7d03"
+    },
+    {
+      "file": "alt180__n10.parquet",
+      "records": 917905,
+      "bytes": 36343305,
+      "sha256": "dcae6fbb0b1c868b5274d54f3a4e4b8eb772c61edeb40abd75f41044bc58c720"
+    },
+    {
+      "file": "alt180__s10.parquet",
+      "records": 914488,
+      "bytes": 36244769,
+      "sha256": "6a353f9c719cbf648dcc65b2cd6d8bc4f2813d986871fe05ba832e259df18de6"
+    },
+    {
+      "file": "alt180__w10.parquet",
+      "records": 929602,
+      "bytes": 36776589,
+      "sha256": "12ff22fe28c3f0075988914f7da8fefc01e6e5f24d9b951e2b51ff588a60892f"
+    },
+    {
+      "file": "alt200__calm.parquet",
+      "records": 631780,
+      "bytes": 25932464,
+      "sha256": "f8514ee41c512a3a98dd3d59286a308f9e1da6e21b347d27ed0b0112125e0cf8"
+    },
+    {
+      "file": "alt200__e10.parquet",
+      "records": 904614,
+      "bytes": 36096543,
+      "sha256": "9d99f2a2a8f339f9fca38b58ae2e6fc777d62eed889a6bca3e5d33e5dee85aab"
+    },
+    {
+      "file": "alt200__n10.parquet",
+      "records": 917819,
+      "bytes": 36483887,
+      "sha256": "48aba27affed07e934386f006d36ed5e720023a3722162e7451319b44a85d7ce"
+    },
+    {
+      "file": "alt200__s10.parquet",
+      "records": 913736,
+      "bytes": 36364528,
+      "sha256": "03d3044bdeb6d894866f8d0711596a75adbd9fdd343453934c49148522c4adab"
+    },
+    {
+      "file": "alt200__w10.parquet",
+      "records": 928845,
+      "bytes": 36908012,
+      "sha256": "3c340e0a1b87879a820a6b701ff7ee3882a1d9f682e918825080f7921041732f"
+    },
+    {
+      "file": "baseline__calm.parquet",
+      "records": 631424,
+      "bytes": 25275629,
+      "sha256": "a01572d79548a669383c48be11b066c9a56e742e4294712549c32b0cff430af0"
+    },
+    {
+      "file": "baseline__e10.parquet",
+      "records": 904887,
+      "bytes": 34933113,
+      "sha256": "32ee64a5f46935c36f2012970740f48dd2d8558ad3fa4a89c901df20226e2711"
+    },
+    {
+      "file": "baseline__n10.parquet",
+      "records": 918430,
+      "bytes": 35357283,
+      "sha256": "4b6761cec8e7afa30195d0d3970f851af5983f74a50df9c5173d95f284f6dff8"
+    },
+    {
+      "file": "baseline__s10.parquet",
+      "records": 913914,
+      "bytes": 35208739,
+      "sha256": "4a3ca4dd20b1dbd38f3b92db873a22ac4efd823ba275c09613ec9621bbb5d212"
+    },
+    {
+      "file": "baseline__w10.parquet",
+      "records": 928670,
+      "bytes": 35702502,
+      "sha256": "d6ac4bca58190ca4d360a3e910f43e1104aa5f5a6400c9f0469ba13c381e7735"
+    },
+    {
+      "file": "speed10__calm.parquet",
+      "records": 1180354,
+      "bytes": 45275288,
+      "sha256": "97cad13969444d51c51ff2fcba81671e6f9693e995b527048c51408a3ddbd368"
+    },
+    {
+      "file": "speed10__e5.parquet",
+      "records": 1557076,
+      "bytes": 59131464,
+      "sha256": "c96cd76a827be2e4fcc525ababc97ce3a5405ab8960cef17d4bba24cae8f56e2"
+    },
+    {
+      "file": "speed10__n5.parquet",
+      "records": 1580683,
+      "bytes": 59819894,
+      "sha256": "c35b098ae99cb620f00419cd7a8690936850b21385bf5ce0d23fb3578c8eca07"
+    },
+    {
+      "file": "speed10__s5.parquet",
+      "records": 1574956,
+      "bytes": 59658569,
+      "sha256": "3f5e68c1f2a3bff25e1d34f5bae340a845ff446fad3d19c3b8b8908a917758e7"
+    },
+    {
+      "file": "speed10__w5.parquet",
+      "records": 1601455,
+      "bytes": 60617942,
+      "sha256": "4b31318bf00bdfd43a89018708de93bfca65538f8043fad42abfb4c6114039e5"
+    },
+    {
+      "file": "speed15__calm.parquet",
+      "records": 809393,
+      "bytes": 31244015,
+      "sha256": "7585cad8ca19db7bb6a58758d48a54a0a74249c06893faff1be342b8053ff019"
+    },
+    {
+      "file": "speed15__e10.parquet",
+      "records": 1471479,
+      "bytes": 56534831,
+      "sha256": "121467b4cb40f5b30c0556a0b45c92256e94c141f3f151229ac3ae7e89ad7bfa"
+    },
+    {
+      "file": "speed15__n10.parquet",
+      "records": 1501847,
+      "bytes": 57427519,
+      "sha256": "b6518df2908abdd56e75ff965e26d7db37b9afcf6ed1ba1b5a30e749fe302c15"
+    },
+    {
+      "file": "speed15__s10.parquet",
+      "records": 1494738,
+      "bytes": 57259142,
+      "sha256": "454daba703659a4adc6f8d30e5991d8d5733325ac73b19f7b2cda95c0edd50dd"
+    },
+    {
+      "file": "speed15__w10.parquet",
+      "records": 1524759,
+      "bytes": 58122393,
+      "sha256": "052bf9af10e1b6c6c317be8a5c946157d1b4fddb22efbd68748b6a5c116f996f"
+    },
+    {
+      "file": "wind5__calm.parquet",
+      "records": 631468,
+      "bytes": 25261258,
+      "sha256": "4df594c0b9ebb17d972e35d67947e630e4ecabc0f5ce72164ce3e64a69529192"
+    },
+    {
+      "file": "wind5__e5.parquet",
+      "records": 685673,
+      "bytes": 27305821,
+      "sha256": "6bd53f6199071798f2ece846013f46478a66f614395d0166b0697de44a625172"
+    },
+    {
+      "file": "wind5__n5.parquet",
+      "records": 690970,
+      "bytes": 27523346,
+      "sha256": "32fa2d68c19f583fbc94bd21600db320e7de298109fd158c5b82847ffab4dda3"
+    },
+    {
+      "file": "wind5__s5.parquet",
+      "records": 689506,
+      "bytes": 27462077,
+      "sha256": "db14ec634f60e90f985985f102e7b8141f1501264e2b621110406859500338bd"
+    },
+    {
+      "file": "wind5__w5.parquet",
+      "records": 695359,
+      "bytes": 27702295,
+      "sha256": "41a4041c5a8efe8755ae44964e354aeba31b51e94d05d51af0ba03a2c9f3f49f"
+    }
+  ],
+  "records": 30583133
+}

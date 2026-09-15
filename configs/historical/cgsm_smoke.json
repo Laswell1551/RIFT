@@ -1,0 +1,12 @@
+{
+  "name": "cgsm_smoke",
+  "seed": 7,
+  "task_order": ["baseline", "wind5", "speed15"],
+  "epochs_per_task": 3,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "memory_budget": 180,
+  "train_limit_per_task": 1200,
+  "eval_limit_per_task": 500,
+  "methods": ["finetune", "ewc", "reservoir", "agem", "derpp", "gss_adapted", "h2c_adapted", "risk_only", "kcenter", "facility", "cgsm"]
+}

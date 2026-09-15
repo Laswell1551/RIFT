@@ -1,0 +1,8 @@
+{
+  "files_before_report": 103,
+  "bytes": 2065973,
+  "syntax": "all top-level Python files parsed",
+  "smoke": "thirteen methods, two actual updates, historical backtesting, memory cap; road padding/valid neighbor/parameter updates passed",
+  "reproduction": "576 road metrics,16 runs and all paired seed summaries/intervals passed",
+  "third_party_source_in_release": false
+}

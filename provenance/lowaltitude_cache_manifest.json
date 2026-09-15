@@ -1,0 +1,277 @@
+{
+  "protocol": "drone-id grouped 70/10/20 split; 5 s 3-D observation; 10 s 3-D prediction",
+  "seed": 20260722,
+  "excluded_development_test_ids": 179,
+  "tasks": [
+    {
+      "task": "baseline",
+      "files": [
+        "baseline__calm.parquet",
+        "baseline__e10.parquet",
+        "baseline__n10.parquet",
+        "baseline__s10.parquet",
+        "baseline__w10.parquet"
+      ],
+      "splits": {
+        "train": {
+          "windows": 5000,
+          "unique_drones": 1067,
+          "risk_distance_quantiles": [
+            0.133,
+            0.4771,
+            1.3888,
+            3.0923,
+            6.0086
+          ]
+        },
+        "val": {
+          "windows": 1000,
+          "unique_drones": 442,
+          "risk_distance_quantiles": [
+            0.1491,
+            0.4766,
+            1.2215,
+            3.0923,
+            5.6012
+          ]
+        },
+        "test": {
+          "windows": 2000,
+          "unique_drones": 690,
+          "risk_distance_quantiles": [
+            0.1173,
+            0.4268,
+            1.2585,
+            3.0183,
+            5.6203
+          ]
+        }
+      }
+    },
+    {
+      "task": "wind5",
+      "files": [
+        "wind5__calm.parquet",
+        "wind5__e5.parquet",
+        "wind5__n5.parquet",
+        "wind5__s5.parquet",
+        "wind5__w5.parquet"
+      ],
+      "splits": {
+        "train": {
+          "windows": 5000,
+          "unique_drones": 1083,
+          "risk_distance_quantiles": [
+            0.1074,
+            0.349,
+            1.0877,
+            2.5035,
+            4.9163
+          ]
+        },
+        "val": {
+          "windows": 1000,
+          "unique_drones": 456,
+          "risk_distance_quantiles": [
+            0.109,
+            0.3218,
+            0.9948,
+            2.3068,
+            4.2943
+          ]
+        },
+        "test": {
+          "windows": 2000,
+          "unique_drones": 697,
+          "risk_distance_quantiles": [
+            0.112,
+            0.3427,
+            1.0254,
+            2.34,
+            4.8946
+          ]
+        }
+      }
+    },
+    {
+      "task": "speed15",
+      "files": [
+        "speed15__calm.parquet",
+        "speed15__e10.parquet",
+        "speed15__n10.parquet",
+        "speed15__s10.parquet",
+        "speed15__w10.parquet"
+      ],
+      "splits": {
+        "train": {
+          "windows": 5000,
+          "unique_drones": 1025,
+          "risk_distance_quantiles": [
+            0.2229,
+            0.7343,
+            1.8578,
+            3.8845,
+            6.8069
+          ]
+        },
+        "val": {
+          "windows": 1000,
+          "unique_drones": 439,
+          "risk_distance_quantiles": [
+            0.1879,
+            0.5927,
+            1.4671,
+            3.1742,
+            5.8688
+          ]
+        },
+        "test": {
+          "windows": 2000,
+          "unique_drones": 662,
+          "risk_distance_quantiles": [
+            0.2051,
+            0.6454,
+            1.7079,
+            3.5809,
+            6.6885
+          ]
+        }
+      }
+    },
+    {
+      "task": "alt180",
+      "files": [
+        "alt180__calm.parquet",
+        "alt180__e10.parquet",
+        "alt180__n10.parquet",
+        "alt180__s10.parquet",
+        "alt180__w10.parquet"
+      ],
+      "splits": {
+        "train": {
+          "windows": 5000,
+          "unique_drones": 1054,
+          "risk_distance_quantiles": [
+            0.1438,
+            0.5243,
+            1.5599,
+            3.4795,
+            6.16
+          ]
+        },
+        "val": {
+          "windows": 1000,
+          "unique_drones": 449,
+          "risk_distance_quantiles": [
+            0.1487,
+            0.545,
+            1.5002,
+            3.1769,
+            5.523
+          ]
+        },
+        "test": {
+          "windows": 2000,
+          "unique_drones": 700,
+          "risk_distance_quantiles": [
+            0.1393,
+            0.482,
+            1.4145,
+            3.2877,
+            5.7422
+          ]
+        }
+      }
+    },
+    {
+      "task": "speed10",
+      "files": [
+        "speed10__calm.parquet",
+        "speed10__e5.parquet",
+        "speed10__n5.parquet",
+        "speed10__s5.parquet",
+        "speed10__w5.parquet"
+      ],
+      "splits": {
+        "train": {
+          "windows": 5000,
+          "unique_drones": 1050,
+          "risk_distance_quantiles": [
+            0.2388,
+            0.6744,
+            1.692,
+            3.5103,
+            6.6063
+          ]
+        },
+        "val": {
+          "windows": 1000,
+          "unique_drones": 434,
+          "risk_distance_quantiles": [
+            0.2132,
+            0.5988,
+            1.554,
+            3.1456,
+            5.9686
+          ]
+        },
+        "test": {
+          "windows": 2000,
+          "unique_drones": 665,
+          "risk_distance_quantiles": [
+            0.2418,
+            0.6753,
+            1.6641,
+            3.4478,
+            6.6752
+          ]
+        }
+      }
+    },
+    {
+      "task": "alt200",
+      "files": [
+        "alt200__calm.parquet",
+        "alt200__e10.parquet",
+        "alt200__n10.parquet",
+        "alt200__s10.parquet",
+        "alt200__w10.parquet"
+      ],
+      "splits": {
+        "train": {
+          "windows": 5000,
+          "unique_drones": 1074,
+          "risk_distance_quantiles": [
+            0.1574,
+            0.54,
+            1.6172,
+            3.6297,
+            6.1763
+          ]
+        },
+        "val": {
+          "windows": 1000,
+          "unique_drones": 438,
+          "risk_distance_quantiles": [
+            0.1415,
+            0.5459,
+            1.5458,
+            3.5155,
+            5.8656
+          ]
+        },
+        "test": {
+          "windows": 2000,
+          "unique_drones": 678,
+          "risk_distance_quantiles": [
+            0.1355,
+            0.4973,
+            1.5706,
+            3.5719,
+            6.3605
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/BIT-Jack/H2C-lifelong",
+  "adaptation": "public encoder, 64 channels; local deterministic residual endpoint head; import-only source edits",
+  "files": [
+    {
+      "file": "encoder.py",
+      "upstream_sha256": "f792cf23c5d45775c6477a8f338ab498d68aec6099cf4aefdcaf12f3f258f43c",
+      "local_sha256": "0cde9a7ecddfdf61590515cae0058f48d9570eb3e32047a86280885b8b50e7f2",
+      "upstream_lf_sha256": "780edf5339167021711ab20dbddee93ff4d0aa92075252670203e62bc5b5bab0",
+      "local_lf_sha256": "ef9d2fc8341d02a01b6a288ad8e0b80506b6d29d959a878cc1aa69e4980551c6"
+    },
+    {
+      "file": "baselayers.py",
+      "upstream_sha256": "bd50977cc6c1959e5f48f4b403b62083b6e5913a1e8c317ccda55328ac44b829",
+      "local_sha256": "466f1bb30c380cc770b38afdd1b247d467850ad1c2f69515b71c1725fa0a8b2d",
+      "upstream_lf_sha256": "e0ff7bbecba55473e3362985db8ee018ded036418011087ae6abb2b74e51ec25",
+      "local_lf_sha256": "2e7f9d82cc0bcbd82402ddb2b5f63c436a833a43a06b1a9b5db60a50851c385b"
+    }
+  ],
+  "upstream_commit": "ecc9cddb7e4ab478768e01ae1ff8f50b69f0d368",
+  "hash_normalization": "LF hashes verify the same source across checkout newline conventions."
+}

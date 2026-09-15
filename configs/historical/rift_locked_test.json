@@ -1,0 +1,27 @@
+{
+  "name": "rift_locked_test_20260722",
+  "seed": 7,
+  "task_order": ["baseline", "wind5", "speed15", "alt180", "speed10", "alt200"],
+  "epochs_per_task": 15,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "torch_threads": 2,
+  "memory_budget": 500,
+  "train_limit_per_task": 4000,
+  "eval_limit_per_task": 2000,
+  "risk_power": 4.0,
+  "risk_strength": 2.0,
+  "methods": [
+    "finetune",
+    "ewc",
+    "agem",
+    "derpp",
+    "reservoir",
+    "gss_adapted",
+    "h2c_adapted",
+    "risk_only",
+    "risk_kcenter",
+    "cgsm_dual",
+    "cgsm_gradient"
+  ]
+}

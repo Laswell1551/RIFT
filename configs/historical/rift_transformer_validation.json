@@ -1,0 +1,22 @@
+{
+  "name": "rift_transformer_validation",
+  "seed": 7,
+  "task_order": ["baseline", "wind5", "speed15", "alt180", "speed10", "alt200"],
+  "backbone": "temporal_transformer",
+  "epochs_per_task": 15,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "torch_threads": 2,
+  "memory_budget": 500,
+  "train_limit_per_task": 4000,
+  "eval_limit_per_task": 1000,
+  "risk_power": 4.0,
+  "risk_strength": 2.0,
+  "methods": [
+    "reservoir",
+    "gss_adapted",
+    "h2c_adapted",
+    "cgsm_dual",
+    "cgsm_gradient"
+  ]
+}

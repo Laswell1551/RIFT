@@ -28,7 +28,10 @@ python code/make_dense_figures.py
 ```
 
 The first check reconstructs ordinary/CPA historical forgetting from all 576
-road checkpoint metrics and checks published summaries. The smoke test trains
+road checkpoint metrics and checks published summaries. It also reconstructs
+all 100 threshold-sensitivity summaries/intervals from 800 task records and
+verifies that threshold 1 reproduces the primary matched-control analysis.
+The smoke test trains
 small artificial inputs through actual sequential updates and historical
 back-testing; its numbers are software checks, never paper evidence.
 These commands need no dataset download. Figures regenerate from the released
@@ -77,11 +80,21 @@ python code/run_continual.py --config configs/main_13_methods.json --cache data/
 python code/run_synthetic_seeds.py
 python code/analyze_stratification.py
 python code/matching_sensitivity.py
+python code/analyze_cpa_thresholds.py
 ```
 
 Run `configs/main_13_methods.json` with seeds 7, 11, 23, 47, 59, 71, 89, 107
 for the main comparison. The original locked configurations for backbone,
 input, budget and noise studies are under `configs/historical/`.
+
+The post-primary threshold sweep reuses frozen historical predictions at
+CPA thresholds 0.5, 1, 1.5 and 2; it changes only evaluation membership.
+For reservoir, the initial-difficulty-matched excess decreases from 0.422 m
+to 0.060 m over this range, with positive seed-bootstrap intervals throughout.
+Smaller selector-specific effects vary with the threshold. All five methods,
+thresholds and both excess contrasts are retained; see
+`docs/THRESHOLD_PROTOCOL.md`. The sweep changes the ellipsoid's uniform scale,
+keeping its horizontal-to-vertical ratio and CPA horizon fixed.
 
 For the future-approach assay, also place original states and the heading-aware
 metadata caches as described in `docs/DATA.md`, then run:
@@ -97,6 +110,7 @@ python code/application_detection.py incident
 | Artifact | Role |
 |---|---|
 | `results/stratification/` | Run-matched and initial-difficulty-matched controls, all seeds and tasks |
+| `results/cpa_thresholds_20260916/` | Four-threshold evaluation sweep, all five methods/eight seeds, support counts and source hashes |
 | `results/interaction_summary/` | All 576 checkpoint/domain metrics, per-domain results and paired contrasts |
 | `results/application*/` | Before/after detection metrics and incident-only sensitivity |
 | `source_data/` | Mechanism diagnostics and derived road curves/cells |

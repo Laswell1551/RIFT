@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "Please cite the RIFT manuscript and this software repository."
 title: "RIFT: CPA-stratified continual trajectory evaluation"
 type: software
-version: 1.0.0
-date-released: 2026-09-15
+version: 1.1.0
+date-released: 2026-09-16
 url: "https://github.com/Laswell1551/RIFT"
 license: MIT
 authors:

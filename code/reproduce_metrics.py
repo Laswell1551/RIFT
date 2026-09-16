@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 from analyze_stratification import bootstrap, METHODS, SEEDS, TASKS
 from analyze_cpa_thresholds import THRESHOLDS
+from check_ttc_metrics import check_ttc_metrics
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -73,9 +74,11 @@ def main():
         assert all(f.groupby('method').seed.nunique()==seeds)
         assert not f.duplicated(['method','seed']).any()
     check_threshold_summaries()
+    ttc_report=check_ttc_metrics()
     print(json.dumps({'checkpoint_rows':576,'trained_runs':16,'road_summaries_and_intervals':'PASS',
                       'synthetic_and_detection_seed_completeness':'PASS',
                       'threshold_task_to_seed_summaries_and_100_intervals':'PASS',
-                      'threshold_one_matches_primary_analysis':'PASS'},indent=2))
+                      'threshold_one_matches_primary_analysis':'PASS',
+                      'time_to_entry':ttc_report},indent=2))
 
 if __name__=='__main__':main()

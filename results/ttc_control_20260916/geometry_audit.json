@@ -1,0 +1,95 @@
+{
+  "design_date": "2026-09-16",
+  "geometry": {
+    "analytic_examples": 6,
+    "random_kinematic_pairs": 50000,
+    "three_horizon_cpa_equivalence": true,
+    "boundary_root_checks": true
+  },
+  "tasks": [
+    {
+      "task": "baseline",
+      "windows": 2000,
+      "max_cpa_distance_difference": 0.0,
+      "max_current_distance_difference": 0.0,
+      "min_other_neighbors": 1,
+      "max_other_neighbors": 63,
+      "cpa_mask_exact": true,
+      "tte_10s_equals_cpa_exact": true
+    },
+    {
+      "task": "wind5",
+      "windows": 2000,
+      "max_cpa_distance_difference": 0.0,
+      "max_current_distance_difference": 0.0,
+      "min_other_neighbors": 11,
+      "max_other_neighbors": 63,
+      "cpa_mask_exact": true,
+      "tte_10s_equals_cpa_exact": true
+    },
+    {
+      "task": "speed15",
+      "windows": 2000,
+      "max_cpa_distance_difference": 0.0,
+      "max_current_distance_difference": 0.0,
+      "min_other_neighbors": 10,
+      "max_other_neighbors": 63,
+      "cpa_mask_exact": true,
+      "tte_10s_equals_cpa_exact": true
+    },
+    {
+      "task": "alt180",
+      "windows": 2000,
+      "max_cpa_distance_difference": 0.0,
+      "max_current_distance_difference": 0.0,
+      "min_other_neighbors": 10,
+      "max_other_neighbors": 63,
+      "cpa_mask_exact": true,
+      "tte_10s_equals_cpa_exact": true
+    },
+    {
+      "task": "speed10",
+      "windows": 2000,
+      "max_cpa_distance_difference": 0.0,
+      "max_current_distance_difference": 0.0,
+      "min_other_neighbors": 7,
+      "max_other_neighbors": 63,
+      "cpa_mask_exact": true,
+      "tte_10s_equals_cpa_exact": true
+    }
+  ],
+  "source_sha256": {
+    "data/lowaltitude/cache/baseline__test.npz": "5820f743a6481a786341ace5bff96a8e8363f04b2227e4dc3e76a8d628a855da",
+    "data/lowaltitude/states/baseline__calm.parquet": "a01572d79548a669383c48be11b066c9a56e742e4294712549c32b0cff430af0",
+    "data/lowaltitude/states/baseline__e10.parquet": "32ee64a5f46935c36f2012970740f48dd2d8558ad3fa4a89c901df20226e2711",
+    "data/lowaltitude/states/baseline__n10.parquet": "4b6761cec8e7afa30195d0d3970f851af5983f74a50df9c5173d95f284f6dff8",
+    "data/lowaltitude/states/baseline__s10.parquet": "4a3ca4dd20b1dbd38f3b92db873a22ac4efd823ba275c09613ec9621bbb5d212",
+    "data/lowaltitude/states/baseline__w10.parquet": "d6ac4bca58190ca4d360a3e910f43e1104aa5f5a6400c9f0469ba13c381e7735",
+    "data/lowaltitude/cache/wind5__test.npz": "3ba9ffac2d3ea8b06060a428bc5acfefa0562d46113f8c8a20774a028fb63ec0",
+    "data/lowaltitude/states/wind5__calm.parquet": "4df594c0b9ebb17d972e35d67947e630e4ecabc0f5ce72164ce3e64a69529192",
+    "data/lowaltitude/states/wind5__e5.parquet": "6bd53f6199071798f2ece846013f46478a66f614395d0166b0697de44a625172",
+    "data/lowaltitude/states/wind5__n5.parquet": "32fa2d68c19f583fbc94bd21600db320e7de298109fd158c5b82847ffab4dda3",
+    "data/lowaltitude/states/wind5__s5.parquet": "db14ec634f60e90f985985f102e7b8141f1501264e2b621110406859500338bd",
+    "data/lowaltitude/states/wind5__w5.parquet": "41a4041c5a8efe8755ae44964e354aeba31b51e94d05d51af0ba03a2c9f3f49f",
+    "data/lowaltitude/cache/speed15__test.npz": "d9b0d5d9f618131d449f9aa0aed13b25de00c0588004e93c293f1e911b9d86a1",
+    "data/lowaltitude/states/speed15__calm.parquet": "7585cad8ca19db7bb6a58758d48a54a0a74249c06893faff1be342b8053ff019",
+    "data/lowaltitude/states/speed15__e10.parquet": "121467b4cb40f5b30c0556a0b45c92256e94c141f3f151229ac3ae7e89ad7bfa",
+    "data/lowaltitude/states/speed15__n10.parquet": "b6518df2908abdd56e75ff965e26d7db37b9afcf6ed1ba1b5a30e749fe302c15",
+    "data/lowaltitude/states/speed15__s10.parquet": "454daba703659a4adc6f8d30e5991d8d5733325ac73b19f7b2cda95c0edd50dd",
+    "data/lowaltitude/states/speed15__w10.parquet": "052bf9af10e1b6c6c317be8a5c946157d1b4fddb22efbd68748b6a5c116f996f",
+    "data/lowaltitude/cache/alt180__test.npz": "32e6b048f0f986fa7f734851de74f780079b62700ea551d375b8a1bbb66bb538",
+    "data/lowaltitude/states/alt180__calm.parquet": "8d6035285e1b57bb3c5e4e6cbe9bb549185c9606a511dc3fcf47527d50ec81a1",
+    "data/lowaltitude/states/alt180__e10.parquet": "5483eec576f3538ad1891dba900f5dfe77ca2f702312867d4dbe7d6e87dd7d03",
+    "data/lowaltitude/states/alt180__n10.parquet": "dcae6fbb0b1c868b5274d54f3a4e4b8eb772c61edeb40abd75f41044bc58c720",
+    "data/lowaltitude/states/alt180__s10.parquet": "6a353f9c719cbf648dcc65b2cd6d8bc4f2813d986871fe05ba832e259df18de6",
+    "data/lowaltitude/states/alt180__w10.parquet": "12ff22fe28c3f0075988914f7da8fefc01e6e5f24d9b951e2b51ff588a60892f",
+    "data/lowaltitude/cache/speed10__test.npz": "7054bd525368dbb961f02bcbf2049b16f7e8ddb75ad4ec64d248be689a176eca",
+    "data/lowaltitude/states/speed10__calm.parquet": "97cad13969444d51c51ff2fcba81671e6f9693e995b527048c51408a3ddbd368",
+    "data/lowaltitude/states/speed10__e5.parquet": "c96cd76a827be2e4fcc525ababc97ce3a5405ab8960cef17d4bba24cae8f56e2",
+    "data/lowaltitude/states/speed10__n5.parquet": "c35b098ae99cb620f00419cd7a8690936850b21385bf5ce0d23fb3578c8eca07",
+    "data/lowaltitude/states/speed10__s5.parquet": "3f5e68c1f2a3bff25e1d34f5bae340a845ff446fad3d19c3b8b8908a917758e7",
+    "data/lowaltitude/states/speed10__w5.parquet": "4b31318bf00bdfd43a89018708de93bfca65538f8043fad42abfb4c6114039e5"
+  },
+  "inputs": "Only observation-time snapshots; no recorded futures used",
+  "query": "k=min(64,snapshot size), then focal aircraft excluded; matches original cache"
+}

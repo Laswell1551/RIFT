@@ -25,12 +25,15 @@ python code/reproduce_metrics.py
 python code/smoke_test.py
 python code/make_validation_figure.py
 python code/make_dense_figures.py
+python code/make_ttc_figure.py --export
 ```
 
 The first check reconstructs ordinary/CPA historical forgetting from all 576
 road checkpoint metrics and checks published summaries. It also reconstructs
 all 100 threshold-sensitivity summaries/intervals from 800 task records and
 verifies that threshold 1 reproduces the primary matched-control analysis.
+It also reconstructs every time-to-entry summary from 1,600 task records,
+checks the disjoint-band accounting, and verifies the ten-second CPA equivalence.
 The smoke test trains
 small artificial inputs through actual sequential updates and historical
 back-testing; its numbers are software checks, never paper evidence.
@@ -96,6 +99,38 @@ thresholds and both excess contrasts are retained; see
 `docs/THRESHOLD_PROTOCOL.md`. The sweep changes the ellipsoid's uniform scale,
 keeping its horizontal-to-vertical ratio and CPA horizon fixed.
 
+### TTC-style temporal decomposition
+
+With the original observation-time state files available, run:
+
+```bash
+python code/analyze_ttc.py check
+python code/analyze_ttc.py prepare
+python code/analyze_ttc.py analyze
+python code/check_ttc_metrics.py
+python code/make_ttc_figure.py --export
+```
+
+The last two commands need only the released aggregates. Time-to-ellipsoid-entry
+(TTE) is a TTC-style proximity diagnostic, using the fixed 50/50/15 m ellipsoid
+and observation-time relative velocities. The 3, 5 and 10 s cumulative groups
+include ongoing proximity. Five disjoint bands separate ongoing proximity,
+new entries in (0,3], (3,5] and (5,10] s, and no entry by 10 s.
+The original 64-entry neighbor query is retained, with the focal aircraft
+removed. On the frozen windows, current/CPA distances reproduce exactly.
+
+Entry within 10 s is mathematically equivalent to the original CPA stratum;
+it is an equivalence check. The temporal bands expose an additional difference:
+reservoir's matched excess is +0.339 m for ongoing proximity and -0.156 m
+for new entries within 3 s. Two-support's corresponding contrasts are
+-0.081 m and +0.324 m. Its absolute forgetting in the new-entry band is
++0.148 m [0.058,0.245], despite negative whole-CPA forgetting.
+The six-panel figure shows all five methods and all disjoint bands with eight
+seeds. Full-population and CPA-conditional matching have distinct reference
+pools; all estimates, intervals and support counts are retained. TTE is not
+literal aircraft-body collision time. See `docs/TTC_PROTOCOL.md` for the
+pre-computation design and terminology sources.
+
 For the future-approach assay, also place original states and the heading-aware
 metadata caches as described in `docs/DATA.md`, then run:
 
@@ -111,6 +146,7 @@ python code/application_detection.py incident
 |---|---|
 | `results/stratification/` | Run-matched and initial-difficulty-matched controls, all seeds and tasks |
 | `results/cpa_thresholds_20260916/` | Four-threshold evaluation sweep, all five methods/eight seeds, support counts and source hashes |
+| `results/ttc_control_20260916/` | Three time cutoffs, five disjoint bands, two matching pools, all seed/task aggregates and geometry audits |
 | `results/interaction_summary/` | All 576 checkpoint/domain metrics, per-domain results and paired contrasts |
 | `results/application*/` | Before/after detection metrics and incident-only sensitivity |
 | `source_data/` | Mechanism diagnostics and derived road curves/cells |

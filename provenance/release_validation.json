@@ -1,13 +1,15 @@
 {
-  "files_before_report": 110,
-  "bytes": 2268940,
+  "files_before_report": 124,
+  "bytes": 3492882,
   "syntax": "all top-level Python files parsed",
   "smoke": "thirteen methods, two actual updates, historical backtesting, memory cap; road padding/valid neighbor/parameter updates passed",
   "reproduction": "576 road metrics,16 runs and all paired seed summaries/intervals passed",
   "third_party_source_in_release": false,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "updated": "2026-09-16",
   "threshold_reproduction": "800 task rows -> 160 seed rows -> 100 bootstrap summaries; threshold 1 reproduces all original results to 1e-12",
   "threshold_source_analysis": "405 frozen prediction/cache files hashed; nested masks and zero-change control passed",
-  "current_validation": "All top-level Python files parse; reproduce_metrics.py passes. Training and plotting code unchanged from the validated 1.0.0 release."
+  "current_validation": "All top-level Python files parse; combined reproduce_metrics.py passes. TTC six-panel vector/raster figures visually reviewed; pdffonts confirms both CID TrueType fonts embedded. Training code is unchanged; prepare_windows.py only clarifies the existing neighbor-query docstring.",
+  "ttc_reproduction": "1600 task records -> 320 seed records -> 240 finite mean/CI pairs; 40 structural undefined entries checked; weighted group reconstruction and 10 s CPA equivalence passed",
+  "ttc_geometry": "6 analytic cases and 50000 random relative states; original frozen current/CPA distances reconstructed exactly"
 }

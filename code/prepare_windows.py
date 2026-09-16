@@ -127,8 +127,9 @@ def observed_risk(
 
     Positions and velocities are normalized by 50 m horizontally and 15 m
     vertically. For each queried aircraft, closest point of approach (CPA) is
-    computed over the next prediction horizon against its 64 nearest aircraft
-    at the observation instant under constant velocity. A CPA distance below
+    computed over the next prediction horizon using a 64-entry nearest-aircraft
+    query at the observation instant, followed by focal-aircraft exclusion,
+    under constant velocity. A CPA distance below
     one enters the separation ellipsoid. The calculation uses no future label.
     """
     if not len(meta):
@@ -287,5 +288,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
 

@@ -1,11 +1,12 @@
 # RIFT: CPA-stratified continual trajectory evaluation
 
-Code and numerical evidence for **Beyond Average Forgetting: CPA-Stratified
-Continual 3-D Trajectory Prediction for Low-Altitude Traffic**.
+Code and numerical evidence for **RIFT: Encounter-Stratified Evaluation of
+Continual Trajectory Prediction for Low-Altitude Traffic Management**.
 
 Jiaqi Lin, Shi Yan and Mugen Peng, Beijing University of Posts and Telecommunications.
 
-RIFT evaluates where forecasting skills change during sequential updates.
+RIFT evaluates how continual predictor updates affect encounter-specific
+forecasting accuracy for low-altitude traffic monitoring.
 It fixes an observed closest-point-of-approach (CPA) stratum and reports
 ordinary, CPA-stratified and worst-regime error and forgetting. The two-support
 memory is a replaceable replay probe. CPA indicates observed interaction
